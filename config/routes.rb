@@ -6,12 +6,10 @@ Rails.application.routes.draw do
     resources :folders, only: [:new, :create]
   end
 
-  resources :folders, only: [:destroy, :update, :edit, :index, :show]
-
-  resources :folders do
-    resources :notes, only: [:new, :create]
+  resources :folders, only: [:destroy, :update, :edit, :index, :show] do
+    resources :notes, only: [:new, :create, :index]
   end
 
-  resources :notes, only: [:destroy, :edit, :update, :index, :show]
+  resources :notes, only: [:destroy, :edit, :update, :show]
 
 end
