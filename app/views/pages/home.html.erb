@@ -1,3 +1,19 @@
-<!-- Delete when necessary, jus LW stuff-->
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner">
+  <div class="nav-bar">
+    <p class="brand-name">
+      Notify
+    </p>
+    <%= link_to "Sign In", new_user_session_path, class: "second-btn"  %>
+  </div>
+  <div class="landing-cta">
+    <h1 class="punchline-banner">
+      Remember. Complete. Delete.
+    </h1>
+    <p class="description">
+      Take notes everywhere at anytime. Meeting notes, school notes, projects,
+      to-do lists - with Notify as your note taking app, nothing falls
+      through the cracks
+    </p>
+    <%= link_to "SIGN UP FOR FREE", new_user_registration_path, class: "cta-main-btn" %>
+  </div>
+</div>
