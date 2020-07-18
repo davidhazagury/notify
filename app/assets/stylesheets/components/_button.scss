@@ -1,4 +1,4 @@
-// Secondary button, mainly for SIGN IN BTN.
+// Secondary button, mainly for SIGN IN BTN, and delete folder, delete note, update folder and update note.
 .second-btn {
   width: 112px;
   height:40px;
@@ -16,5 +16,23 @@
   &:hover {
     text-decoration: none;
     color: $dark-main-color;
+  }
+}
+// Main button, for CTA and adding folder and note.
+.cta-main-btn {
+  background-color: $cta-red-color;
+  color: $font-color;
+  width: 400px;
+  height: 114px;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  padding: 14px 40px;
+  font-family: $main-font;
+  font-weight: 550;
+  font-size: 16px;
+  &:hover {
+    text-decoration: none;
+    color: $font-color;
   }
 }
