@@ -1,7 +1,7 @@
 class FoldersController < ApplicationController
   # Shows all the folders
   def index
-    @folders = Folder.all
+    @folders = Folder.all.first
   end
 
   def show
