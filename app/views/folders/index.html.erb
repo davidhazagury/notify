@@ -1,13 +1,19 @@
 <div class="main-container">
   <div class="side-menu">
     <div class="user-info-side-menu">
-
+      <%= current_user.first_name.upcase + "'S NOTES" %>
     </div>
-    <!-- NEED TO ADD THE ADD FOLDE BTN HERE-->
+    <div class="sidebar-btn">
+      <%= link_to "New folder", new_user_folder_path(current_user.id), class: "cta-main-btn"  %>
+    </div>
     <div class="folders-tabs">
-      <% current_user.folders.each do |folder| %>
-        <%= link_to folder.folder_name, folder_notes_path(folder.id) %>
-      <% end %>
+      <ul class="folder-lsit">
+          <% current_user.folders.each do |folder| %>
+            <li class="folder">
+              <%= link_to folder.folder_name, folder_notes_path(folder.id) %>
+            </li>
+          <% end %>
+      </ul>
     </div>
   </div>
   <div class="notes-grid"></div>

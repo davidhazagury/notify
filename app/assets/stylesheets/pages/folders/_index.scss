@@ -1,0 +1,58 @@
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  // SIDEBAR MENU STYLING
+  .side-menu {
+      background-color: $dark-main-color;
+      width: 18%;
+      height: 100%;
+      padding: 20px;
+      .user-info-side-menu {
+        font-family: $main-font;
+        font-weight: 600;
+        color: $font-color;
+        font-size: 31px;
+        width: 100%;
+        margin-bottom: 20px;
+        text-align:left;
+      }
+      .sidebar-btn {
+        width:100%;
+        text-align: center;
+      }
+      .folders-tabs {
+        text-align: left;
+        padding: 0px;
+        margin-top: 25px;
+      }
+      .folder-lsit {
+        padding: 0px;
+      }
+      .folder {
+        text-decoration: none;
+        list-style: none;
+        margin-top: 20px;
+        font-size: 18px;
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+        a {
+          color: $font-color;
+          font-family: $main-font;
+          font-weight: 200;
+          &:hover {
+            text-decoration: none;
+            color: $font-color;
+          }
+        }
+      }
+  }
+
+  // NOTES GRID MENU STYLING
+  .notes-grid {
+    background-color: $background-color;
+    flex-grow:1;
+    height:100%;
+  }
+
+}
