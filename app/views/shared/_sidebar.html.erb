@@ -3,7 +3,7 @@
       <%= current_user.first_name.upcase + "'S NOTES" %>
     </div>
     <div class="sidebar-btn">
-      <%= link_to "New folder", new_user_folder_path(current_user.id), class: "cta-main-btn", :remote => true  %>
+      <%= link_to "New folder", new_user_folder_path(current_user.id), class: "cta-main-btn" %>
     </div>
     <div class="folders-tabs">
       <ul class="folder-lsit">
