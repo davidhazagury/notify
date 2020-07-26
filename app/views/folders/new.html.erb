@@ -1,5 +1,5 @@
-<%= form_for(@folder) do |folder| %>
-<%= folder.label :folder_name, label: 'Enter the name of the new folder', required: true %>
-<%= folder.text_field :folder_name %>
-<%= folder.submit %>
+<%= simple_form_for @folder do |f| %>
+<%= f.label :folder_name, label: 'Enter the name of the new folder', required: true %>
+<%= f.text_field :folder_name %>
+<%= f.submit %>
 <% end %>

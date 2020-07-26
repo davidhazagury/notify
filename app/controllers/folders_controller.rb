@@ -14,9 +14,9 @@ class FoldersController < ApplicationController
 
   def create
     @folder = Folder.new(folder_params)
-    @restaurante.save
+    @folder.save!
 
-    redirect_to folder_path(@folder)
+    redirect_to folder_path(@folder.id)
   end
 
   private
