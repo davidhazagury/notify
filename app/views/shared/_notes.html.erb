@@ -1,0 +1,10 @@
+<% @notes.each do |note| %>
+  <div class="note-card">
+    <h3 class="note-tilte">
+      <%= note.note_title %>
+    </h3>
+    <p class="note-content">
+      <%= note.note_content %>
+    </p>
+  </div>
+<% end %>

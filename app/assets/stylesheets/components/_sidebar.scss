@@ -31,6 +31,7 @@
         font-size: 18px;
         border-bottom: 1px solid white;
         padding-bottom: 10px;
+        cursor: pointer;
         a {
           color: $font-color;
           font-family: $main-font;
@@ -45,4 +46,24 @@
         width: 100%;
         margin-top: 50vh;
       }
-  }
+  // CLASS FOR THE JS LISTENER, ONCE CLICKED
+      .clicked-folder {
+        background-color: red;
+        text-decoration: none;
+        list-style: none;
+        margin-top: 20px;
+        font-size: 18px;
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+        cursor: pointer;
+        p {
+          color: $font-color;
+          font-family: $main-font;
+          font-weight: 200;
+          &:hover {
+            text-decoration: none;
+            color: $font-color;
+          }
+        }
+      }
+  };

@@ -1,7 +1,7 @@
 class FoldersController < ApplicationController
   # Shows all the folders
   def index
-    @folders = Folder.all.first
+    @folders = Folder.all
   end
 
   def show
@@ -13,7 +13,7 @@ class FoldersController < ApplicationController
   end
 
   def create
-    @folder = Folder.new(folder_params)
+    @folder = Folder.new(params[:folder_name])
     @folder.save!
 
     redirect_to folder_path(@folder.id)

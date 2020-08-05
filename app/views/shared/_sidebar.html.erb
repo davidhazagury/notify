@@ -9,12 +9,12 @@
       <ul class="folder-lsit">
           <% current_user.folders.each do |folder| %>
             <li class="folder">
-              <%= link_to folder.folder_name, folder_path(folder.id) %>
+              <%= link_to folder.folder_name, folder_notes_path(folder.id) %>
             </li>
           <% end %>
       </ul>
     </div>
     <div class="log-out-div-wrapper">
-      <%= link_to "Log Out", destroy_user_session_path, :method => 'delete', class: "log-out-btn"  %>
+      <%= link_to "Log Out", destroy_user_session_path,  :method => 'delete', class: "log-out-btn"  %>
     </div>
   </div>
