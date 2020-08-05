@@ -5,12 +5,14 @@
   that message plus current user's notes next to it-->
 </div>
 
-<script type="text/javascript">
-  // ADD LISTENER TO EACH FOLDER LINK
-   /*let folders = document.querySelectorAll(".folder"); // Returns an Array with the folders
-   folders.forEach((folder)=>{
-    folder.addEventListener("click", (event)=> {
-      console.log("Hola que tal");
-    });
-   });*/
+<script>
+// 1. Get the element we want to inject the notes.
+const grid = document.querySelector('.notes-grid');
+// 2. Add event listeners to EACH button.
+const buttons = document.querySelectorAll('.folder');
+buttons.forEach((button) => {
+  button.addEventListener("click",() =>{
+
+  });
+});
 </script>

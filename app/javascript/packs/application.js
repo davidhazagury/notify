@@ -24,7 +24,7 @@ require("channels")
 
 // External imports
 import "bootstrap";
-
+// import {dashboard} from '../plugins/dashboard_backend';
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
