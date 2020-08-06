@@ -13,10 +13,13 @@ class FoldersController < ApplicationController
   end
 
   def create
-    @folder = Folder.new(params[:folder_name])
-    @folder.save!
-
-    redirect_to folder_path(@folder.id)
+    @folder = Folder.new(folder_params)
+    @folder.user_id = current_user.id
+    if @folder.save!
+      redirect_to folder_path(@folder.id)
+    else
+      render :new
+    end
   end
 
   private
