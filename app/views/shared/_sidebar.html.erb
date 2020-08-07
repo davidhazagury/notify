@@ -8,9 +8,15 @@
     <div class="folders-tabs">
       <ul class="folder-lsit">
           <% current_user.folders.each do |folder| %>
-            <li class="folder">
-              <%= link_to folder.folder_name, folder_notes_path(folder.id) %>
-            </li>
+            <% if Folder.first.id == folder.id %>
+              <li class="folder active">
+                <%= link_to folder.folder_name, folder_notes_path(folder.id), class: "link-side-bar" %>
+              </li>
+            <% else %>
+              <li class="folder">
+                <%= link_to folder.folder_name, folder_notes_path(folder.id), class: "link-side-bar" %>
+              </li>
+            <% end %>
           <% end %>
       </ul>
     </div>
